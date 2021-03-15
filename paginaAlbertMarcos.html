@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre tab</title>
+</head>
+<style>
+    .fondoNegro{
+        background-color: aqua;
+    }
+    
+</style>
+<body>
+    <div class="fondoNegro">
+
+        <input type="number" id="numero1">
+        <input type="number" id="numero2">
+
+        <button onclick="sumar()">Sumar</button>
+        <button onclick="Restar()">Restar</button>
+        <button onclick="dividir()">dividir</button>
+        <button onclick="sumar()">Multiplicar</button>
+        <p id="resultado"></p>
+    </div>
+</body>
+<script>{
+    
+    function sumar (){
+        var nro1=document.getElementById("numero1").value;
+        var nro2=document.getElementById("numero2").value;
+        
+        document.getElementById("resultado").innerHTML=parseInt(nro1)+parseInt(nro2);
+        
+    }
+    function restar (){
+        var nro1=document.getElementById("numero1").value;
+        var nro2=document.getElementById("numero2").value;
+        
+        document.getElementById("resultado").innerHTML=parseInt(nro1)-parseInt(nro2);
+        
+    }
+}
+</script>
+
+</html>

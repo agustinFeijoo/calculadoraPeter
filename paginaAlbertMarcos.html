@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Nombre tab</title>
 </head>
 <style>
     .fondoNegro{
         background-color: aqua;
+
     }
     
 </style>
@@ -31,6 +32,13 @@
         var nro2=document.getElementById("numero2").value;
         
         document.getElementById("resultado").innerHTML=parseInt(nro1)+parseInt(nro2);
+        
+    }
+    function restar (){
+        var nro1=document.getElementById("numero1").value;
+        var nro2=document.getElementById("numero2").value;
+        
+        document.getElementById("resultado").innerHTML=parseInt(nro1)-parseInt(nro2);
         
     }
     function restar (){

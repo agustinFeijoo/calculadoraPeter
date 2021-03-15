@@ -6,14 +6,14 @@
     <title>Nombre tab</title>
 </head>
 <style>
-    .fondoNegro{
+    #fondoNegro{
         background-color: aqua;
 
     }
     
 </style>
 <body>
-    <div class="fondoNegro">
+    <div id="fondoNegro">
 
         <input type="number" id="numero1">
         <input type="number" id="numero2">
@@ -21,7 +21,7 @@
         <button onclick="sumar()">Sumar</button>
         <button onclick="Restar()">Restar</button>
         <button onclick="dividir()">dividir</button>
-        <button onclick="sumar()">Multiplicar</button>
+        <button onclick="multiplicar()">Multiplicar</button>
         <p id="resultado"></p>
     </div>
 </body>
@@ -41,13 +41,7 @@
         document.getElementById("resultado").innerHTML=parseInt(nro1)-parseInt(nro2);
         
     }
-    function restar (){
-        var nro1=document.getElementById("numero1").value;
-        var nro2=document.getElementById("numero2").value;
-        
-        document.getElementById("resultado").innerHTML=parseInt(nro1)-parseInt(nro2);
-        
-    }
+
 }
 </script>
 
